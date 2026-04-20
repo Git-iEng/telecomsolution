@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-tpzqxw&&@03wq2yzgf!gzh6u2=044s2j+_!#jioe(#f^6%quzo'
  
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # keep false on server, true locally if needed
+DEBUG = True  # keep false on server, true locally if needed
  
 if DEBUG:
     SECURE_SSL_REDIRECT = False
@@ -34,8 +34,7 @@ else:
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
 
-
-ALLOWED_HOSTS = ["projectmanagement.ieng.tech", ".ieng.tech"]
+ALLOWED_HOSTS = ["telecomsolution.ieng.tech", ".ieng.tech", "*"]
  
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
@@ -175,6 +174,5 @@ EMAIL_TIMEOUT = 15
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
-
 RECAPTCHA_SITE_KEY = "6LdJgJgsAAAAACrJJ-nuo1Iw2sBxiKpTWADZ5stZ"
 RECAPTCHA_SECRET_KEY = "6LdJgJgsAAAAAMtKmtGv8pLZ3y7pvxV0UAe7Sx10"
