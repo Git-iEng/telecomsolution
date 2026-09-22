@@ -1077,7 +1077,7 @@ Project section temoplate
 }
 
 .generators-year{
-  position:absolute;
+  
   inset:14px auto auto 14px;
   background:linear-gradient(135deg, var(--lv-orange), var(--lv-orange-400));
   color:#fff;
